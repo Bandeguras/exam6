@@ -16,8 +16,8 @@ position: justify
         <form class="d-flex" action="#" method="post">
             {% csrf_token %}
             <h2>{{ book.author }} ({{book.email}})</h2>
-            <input type="submit" value="delete" class="btn btn-danger ms-4"/>
-            <input type="submit" value="update" class="btn btn-danger ms-2"/>
+            <button class="btn"><i class="bi bi-file-earmark-minus" style="font-size:25px"></i></button>
+            <button class="btn"><i class="bi bi-pencil" style="font-size:25px"></i></button>
         </form>
 
         <p>{{ book.description }}</p>
