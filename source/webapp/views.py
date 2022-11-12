@@ -9,4 +9,4 @@ def index_view(request):
     context = {
         'books': books,
     }
-    return render(request, 'index', context)
+    return render(request, 'index.html', context)
