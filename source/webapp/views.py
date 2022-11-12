@@ -5,7 +5,7 @@ from webapp.forms import BookForm
 
 
 def index_view(request):
-    books = Book.objects.order_by('-completion_at')
+    books = Book.objects.all().filter(status='active').order_by('-completion_at')
     context = {
         'books': books,
     }
