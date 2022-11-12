@@ -1,0 +1,80 @@
+[
+{
+    "model": "webapp.book",
+    "pk": 6,
+    "fields": {
+        "author": "said saliev",
+        "email": "repsaid@gmail.com",
+        "description": "alteration ito use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks asle. n some form, by injected humour, or randomised words which don't look even slightly believabIf you are going",
+        "completion_at": "2022-11-12T07:37:58.495Z",
+        "updated_at": "2022-11-12T07:40:24.632Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.book",
+    "pk": 7,
+    "fields": {
+        "author": "KRATOS",
+        "email": "KRATOS@gmail.com",
+        "description": "alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as",
+        "completion_at": "2022-11-12T07:38:35.032Z",
+        "updated_at": "2022-11-12T07:38:35.032Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.book",
+    "pk": 8,
+    "fields": {
+        "author": "aloha",
+        "email": "SATR@gmail.com",
+        "description": "alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as",
+        "completion_at": "2022-11-12T07:38:42.577Z",
+        "updated_at": "2022-11-12T07:38:42.577Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.book",
+    "pk": 9,
+    "fields": {
+        "author": "ATREY",
+        "email": "ATREY@gmail.com",
+        "description": "alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as",
+        "completion_at": "2022-11-12T07:39:09.612Z",
+        "updated_at": "2022-11-12T07:39:09.612Z",
+        "status": "blocked"
+    }
+},
+{
+    "model": "webapp.book",
+    "pk": 10,
+    "fields": {
+        "author": "TUR",
+        "email": "TUR@gmail.com",
+        "description": "alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as",
+        "completion_at": "2022-11-12T07:39:30.484Z",
+        "updated_at": "2022-11-12T07:39:30.484Z",
+        "status": "blocked"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$JguHTaAEScOMmKptwPHjsx$rzXw6BiHpGAgELwWRxxn8uZnMK+BZ2R5DpnKySVruCQ=",
+        "last_login": "2022-11-12T07:30:20.622Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-11-12T07:29:47.458Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
