@@ -49,3 +49,12 @@ def update_book_view(request, pk):
             return redirect('index')
         else:
             return render(request, 'update.html', {'form': form})
+
+
+def delete_book_view(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', {'book': book})
+    elif request.method == 'POST':
+        book.delete()
+        return redirect('index')

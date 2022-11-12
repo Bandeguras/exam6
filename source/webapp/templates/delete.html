@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{% block title %}Delete Book{% endblock %}
+
+
+{% block content %}
+
+
+    <form method="POST" action="" class="text-center" style="color: black">
+        <h1>Are you sure want to delete book </h1>
+        <h2>{{ book.author }}</h2>
+        <p>{{ book.description }}</p>
+        {% csrf_token %}
+        <input class="btn" style="border:solid 2px black" type="submit" value="Да" >
+        <a style="border:solid 2px black" href="{% url "index" %}" class="p-2 rounded text-decoration-none link-dark">Нет</a>
+    </form>
+{% endblock %}
