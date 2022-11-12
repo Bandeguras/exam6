@@ -1,16 +1,26 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from webapp.models import Book
 from webapp.forms import BookForm
+from django.db.models import Q
 # Create your views here.
 
 
 def index_view(request):
     books = Book.objects.all().filter(status='active').order_by('-completion_at')
-    context = {
-        'books': books,
-    }
+    search_post = request.GET.get('search')
+    if search_post:
+        books = Book.objects.all().filter(author=search_post, status='active').order_by('-completion_at')
+        context = {
+            'books': books,
+        }
+        return render(request, 'index.html', context)
+    else:
+        context = {
+            'books': books,
+        }
 
-    return render(request, 'index.html', context)
+        return render(request, 'index.html', context)
+
 
 
 def create_book_view(request):
